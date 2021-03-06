@@ -1,5 +1,25 @@
 body{
     background-image: url(../images/pizza3.jpg);
-    width: 1920px;
-    height: 1080px;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.pizza{
+    width: 450px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+h1{
+    margin: 0;
+    padding: 0, 0, 20px;
+    text-align: center;
+    font-size: 35px;
+    color: yellow;
 }
