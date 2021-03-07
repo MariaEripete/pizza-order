@@ -6,7 +6,7 @@ body{
 }
 .pizza{
     width: 450px;
-    height: 600px;
+    height: 700px;
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     top: 50%;
@@ -22,4 +22,13 @@ h1{
     text-align: center;
     font-size: 35px;
     color: yellow;
+}
+.pizza input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
 }
