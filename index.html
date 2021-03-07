@@ -7,14 +7,14 @@
     </head>
     <body>
         <div class="pizza">
-            <h1>Order Here!</h1>
+            <h1>Mojo Pizzeria, Order Here!</h1>
             <form action="">
                 <p>Pick a size:</p>
-                <input type="checkbox" id="Small"  value="small">
+                <input type="checkbox" id="Small"  value="small" name="Small">
                 <label> Small</label>
-                <input type="checkbox" id="Medium" value="medium">
+                <input type="checkbox" id="Medium" value="medium" name="Medium">
                 <label> Medium</label>
-                <input type="checkbox" id="Large" value="large">
+                <input type="checkbox" id="Large" value="large" name="Large">
                 <label> Large</label>
                 <p>
                     <label>Which crust would you like?</label>
@@ -28,21 +28,35 @@
                 </p>
                 <p>
                     <label>Choose preffered toppings(max of 5)</label>
-                    <select class="my_select_box" data-placeholder="Select Your Options">
-                        <option value="1">Beef</option>
-                        <option value="2" selected>Chicken</option>
-                        <option value="3" disabled>Cheese</option>
-                        <option value="4">Mushrooms</option>
-                        <option value="5">Pinnaples</option>
-                        <option value="6">Bacon</option>
-                        <option value="7">Bell peppers</option>
-                        <option value="8">Peperoni</option>
-                        <option value="9">Onions</option>
-                        <option value="10">Olives</option>
-                        <option value="11">Sausages</option>
-                        <option value="12">Jalepeno peppers</option>
+                    <select class="my_select_box" placeholder="Select Your Options" multiple class="chosen-select">
+                        <option value="1" id="beef">Beef</option>
+                        <option value="2" id="chicken">Chicken</option>
+                        <option value="3" disabled id="cheese">Cheese</option>
+                        <option value="4" id="mushroooms">Mushrooms</option>
+                        <option value="5" id="pineapples">Pinapples</option>
+                        <option value="6" id="bacon">Bacon</option>
+                        <option value="7" id="bellpeppers">Bell peppers</option>
+                        <option value="8" id="peperoni">Peperoni</option>
+                        <option value="9" id="onions">Onions</option>
+                        <option value="10" id="olives">Olives</option>
+                        <option value="11" id="sausages">Sausages</option>
+                        <option value="12" id="jalepeno">Jalepeno peppers</option>
                     </select>
                 </p>
+                <p>
+                    <label>How many pizzas would you like</label>
+                    <input type="number" size="30" id="quantity">
+                </p>
+                <p>
+                    <label>Location of delivery</label>
+                    <input type="text" size="30" id="location">
+                </p>
+                <input type="submit" name="submit" value="Submit">
+                <div>
+                    <p class="output"></p>
+                </div>
+
+                
                 
             </form>
         </div>
