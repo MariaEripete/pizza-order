@@ -2,6 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <title>Mojo Pizzeria</title>
     </head>
@@ -10,25 +12,25 @@
             <h1>Mojo Pizzeria, Order Here!</h1>
             <form action="">
                 <p>Pick a size:</p>
-                <input type="checkbox" id="Small"  value="small" name="Small">
+                <input type="checkbox" id="choce"  value="small" name="Small" data-price="500">
                 <label> Small</label>
-                <input type="checkbox" id="Medium" value="medium" name="Medium">
+                <input type="checkbox" id="choice" value="medium" name="Medium" data-price="700">
                 <label> Medium</label>
-                <input type="checkbox" id="Large" value="large" name="Large">
+                <input type="checkbox" id="choice" value="large" name="Large" data-price="1000">
                 <label> Large</label>
                 <p>
                     <label>Which crust would you like?</label>
-                    <select id = "crust">
-                        <option value = "1" id="flatbread">Flatbread</option>
-                        <option value = "2" id="thin">Thin Crust</option>
-                        <option value = "3" id="stuffed">Stuffed Crust</option>
-                        <option value = "4" id="focaccia">Focaccia</option>
-                        <option value = "4" id="vegan">Vegan Friendly</option>
+                    <select class = "crust" id="pref">
+                        <option value = "1" id="crust">Flatbread</option>
+                        <option value = "2" id="crust">Thin Crust</option>
+                        <option value = "3" id="crust">Stuffed Crust</option>
+                        <option value = "4" id="crust">Focaccia</option>
+                        <option value = "4" id="crust">Vegan Friendly</option>
                     </select>
                 </p>
                 <p>
                     <label>Choose preffered toppings(max of 5)</label>
-                    <select class="my_select_box" placeholder="Select Your Options" multiple class="chosen-select">
+                    <select class="multi-select" id="selTop" placeholder="Select Your Options" >
                         <option value="1" id="beef">Beef</option>
                         <option value="2" id="chicken">Chicken</option>
                         <option value="3" disabled id="cheese">Cheese</option>
@@ -51,9 +53,9 @@
                     <label>Location of delivery</label>
                     <input type="text" size="30" id="location">
                 </p>
-                <input type="submit" name="submit" value="Submit">
-                <div>
-                    <p class="output"></p>
+                <input type="button" name="submit" value="Submit">
+                <div id="output">
+                    
                 </div>
 
                 
@@ -65,6 +67,8 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
