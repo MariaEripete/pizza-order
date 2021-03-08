@@ -5,6 +5,7 @@ var location= document.getElementById("location").value;
 
 
 
+
 $ (document).ready(function(){
     $('.multi-select').selectpicker();
 })
@@ -23,11 +24,13 @@ $ (document).ready(function(){
 
 
 //prototype
-function location() {
-    this.firstName = first;
-    this.lastName = last;
+function Order(choice, crust, quantity,location) {
+    this.size = choice;
+    this.acrust = crust;
+    this.nofpizza = quantity;
+    this.where = location;
   }
   
-  Contact.prototype.fullName = function() {
-    return this.firstName + " " + this.lastName;
+  AnotherOrder.prototype.fullOrder = function() {
+    alert ("Your oder for a "+ this.size + "to " + this.location + "has been received");
   }
