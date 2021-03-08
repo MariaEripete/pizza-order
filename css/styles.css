@@ -23,7 +23,7 @@ h1{
     font-size: 35px;
     color: yellow;
 }
-.pizza input[type="submit"]{
+.pizza input[type="button"]{
     border: none;
     outline: none;
     height: 40px;
