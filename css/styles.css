@@ -93,59 +93,7 @@ header{
     50%{color: #fff;}
     100%{color: maroon;}
 }
-.col-md-4{
-    border-radius: 10%;
-    padding: 10px;
-}*/
-/*.image6{
-    height: 200px;
-    width: 300px;
-}
- img{
-    padding: 10px;
-}
-.image1{
-    height: 200px;
-    width: 300px;
-}
-.image2{
-    height: 200px;
-    width: 300px;
-}
-.image3{
-    height: 200px;
-    width: 300px;
-}
-.image4{
-    height: 200px;
-    width: 300px;
-}
-.image5{
-    height: 200px;
-    width: 300px;
-}
-.card{
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-} 
-#card2{
-    width: 100%;
-}
-#card3{
-    width: 88%;
-    margin-top: 26px;
-    left: 11px;
-    height: -900px;
-}
-#card4{
-    width: 102%;
-    right: 15px;
-}
-#card5{
-    right: -12px;
-    width: 100%;
-}*/
+*/
 .title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -155,12 +103,6 @@ header{
     color: #000;
     text-transform: uppercase;
 }
-/*.card-title{
-    text-align: center;
-    color: maroon;
-    font-weight: 800;
-    font-family: 'Delius Swash Caps', cursive;
-}*/
 #aboutus{
     text-align: center;
     padding-top: 40px;
@@ -176,6 +118,7 @@ header{
     padding-top: 40px;
     padding-bottom: 20px;
     font-weight: bolder;
+    color: maroon;
 } 
 option{
     width: 100%;
@@ -183,6 +126,36 @@ option{
 }
 .row{
     align-items: center;
+}
+#Ordernow{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 50px;
+    border-radius: 5px;
+}
+#final-option{
+    background-color: maroon;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10PX;
+
+}
+#Checkout{
+    background-color: maroon;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10PX;
+}
+.hidden{
+    display: none;
+} 
+.pizzaTable{
+    color: #fff;
+    border: 1px solid black;
+}
+th, td, th{
+    color: #fff;
 }
 #crust, #size, #Flavor, #toppings{
     width: 100%;
@@ -216,42 +189,9 @@ option{
     
 }
 #order-pizza{
-    /*background-image: url("../images/back1.jpg");*/
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 120vh;
     color:#fff;
     align-items: center;
     overflow: hidden;
     
-}
-#Ordernow{
-    background: rgba(0, 0, 0, 0.7);
-    padding: 40px 50px;
-    border-radius: 5px;
-}
-#final-option{
-    background-color: maroon;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 10PX;
-
-}
-#Checkout{
-    background-color: maroon;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 10PX;
-}
-.hidden{
-    display: none;
-} 
-.pizzaTable{
-    color: #fff;
-    border: 1px solid black;
-}
-th, td, th{
-    color: #fff;
 }
