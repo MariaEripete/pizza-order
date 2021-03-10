@@ -1,34 +1,36 @@
 $(document).ready(function () {
   function Pizzeria(flavor, size, crust, topping) {
-      this.flavor = flavor;
-      this.crust = crust;
-      this.topping = topping;
-      this.size = size;
+
+     this.topping = topping;
+     this.size = size;  
+     this.flavor = flavor;
+     this.crust = crust;
+      
   }
   var totalAmount = 0;
   var OrderNew = [];
   Pizzeria.prototype.ToppingPrice = function () {
       if (this.size === "large") {
-          if (this.topping === "mushroom") {
+          if (this.topping === "Olives") {
               return 900;
-          } else if (this.topping === "Green pepper") {
+          } else if (this.topping === "Extra Cheese") {
               return 880;
           } else {
               return 850;
           }
 
       } else if (this.size === "medium") {
-          if (this.topping === "mushroom") {
+          if (this.topping === "Olives") {
               return 850;
-          } else if (this.topping === "Green pepper") {
+          } else if (this.topping === "Extra Cheese") {
               return 830;
           } else {
               return 820;
           }
       } else if (this.size === "small") {
-          if (this.topping === "mushroom") {
+          if (this.topping === "Olives") {
               return 650;
-          } else if (this.topping === "Green pepper") {
+          } else if (this.topping === "Extra Cheese") {
               return 670;
           } else {
               return 620;
@@ -136,31 +138,7 @@ $(document).ready(function () {
       for (let i = 0; i < OrderNew.length; i++ ){
           totalAmount += OrderNew[i].totalPrice();
       }
-      $("#ordersTaken").append(
-          "<tr>" +
-          '<td scope="orderCalculation">' +
-          newPizza.flavor +
-          " - " +
-          newPizza.flavorPrice () + 
-          "</td>" +
-          "<td>" +
-          newPizza.size +
-          "</td>" +
-          "<td>" +
-          newPizza.crust +
-          " @ " +
-          newPizza.crustPrice() +
-          "</td>" +
-          "<td>" +
-          newPizza.topping +
-          " @ " +
-          newPizza.ToppingPrice()  +
-          "</td>" +
-          "<td>" +
-          newPizza.totalPrice() +
-          "</td>" +
-          "</tr>"
-      );
+      
 
       $("#ordersTaken").append("");
       if (OrderNew.length > 0) {
