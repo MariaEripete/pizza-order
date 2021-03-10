@@ -1,40 +1,4 @@
-/*body{
-    background-image: url(../images/pizza3.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: sans-serif;
-}
-.pizza{
-    width: 450px;
-    height: 700px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 30px 30px;
-}
-h1{
-    margin: 0;
-    padding: 0, 0, 20px;
-    text-align: center;
-    font-size: 35px;
-    color: yellow;
-}
-.pizza input[type="button"]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #1c8adb;
-    color: #ffffff;
-    font-size: 18px;
-    border-radius: 20px;
-}*/
-
-*{
-    
+*{   
     box-sizing: border-box;
 }
 body{
@@ -45,14 +9,13 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    font-family: 'Flamenco', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
 }
-
-
 .navbar{
     margin: 0 auto;
     max-width: 1180px;
+    text-align: right;
 }
 .main-nav{
     float: right;
@@ -74,7 +37,7 @@ header{
     padding: 5px 0;
 }
 .main-nav li a:hover{
-    border-bottom: 2px solid #bf55ec;
+    border-bottom: 2px solid maroon;
 }
 .header-conent{
     position: absolute;
@@ -89,7 +52,7 @@ header{
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-family: 'Flamenco', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .btn{
     display: inline-block;
@@ -102,44 +65,42 @@ header{
 }
 #button{
     background-color: transparent;
-    color: #bf55ec;
+    color: maroon;
     margin-right: 15px;
-    border: 1px solid #bf55ec;
+    border: 1px solid maroon;
     border-radius: 200px;
-    font-family: 'Flamenco', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #button2{
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 200px;
-    font-family: 'Flamenco', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #button:hover{
     background-color: #fff;
 }
 #button2:hover{
-    background-color: #bf55ec;
+    background-color: maroon;
 }
-.animation{
+/*.animation{
     animation: animationpizzeria 1s infinite;
-}
-@keyframes animationpizzeria{
-    0%{color: red;}
-    25%{color: #bf55ec;}
+}*/
+/*@keyframes animationpizzeria{
+    0%{color: pink;}
+    25%{color: maroon;}
     50%{color: #fff;}
-    100%{color: #bf55ec;}
+    100%{color: maroon;}
 }
 .col-md-4{
     border-radius: 10%;
     padding: 10px;
-  }
-.image6{
+}*/
+/*.image6{
     height: 200px;
     width: 300px;
 }
-
-
  img{
     padding: 10px;
 }
@@ -184,11 +145,9 @@ header{
 #card5{
     right: -12px;
     width: 100%;
-}
-
-
+}*/
 .title{
-    font-family: 'Gabriela', serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 30px;
@@ -196,12 +155,12 @@ header{
     color: #000;
     text-transform: uppercase;
 }
-.card-title{
+/*.card-title{
     text-align: center;
-    color: #bf55ec;
+    color: maroon;
     font-weight: 800;
     font-family: 'Delius Swash Caps', cursive;
-}
+}*/
 #aboutus{
     text-align: center;
     padding-top: 40px;
@@ -213,16 +172,11 @@ header{
     font-family: 'Gabriela', serif;
     text-transform: uppercase;
 }
-
-
-
 #order-now h2{
-    
-     padding-top: 40px;
-     padding-bottom: 20px;
-     font-weight: bolder;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: bolder;
 } 
-
 option{
     width: 100%;
     align-items: center;
@@ -236,7 +190,7 @@ option{
     padding-bottom: 10px;
 }
 #button3{
-    background-color: blue;
+    background-color: maroon;
     color: #fff;
     text-align: center;
     border-radius: 10px;
@@ -248,20 +202,21 @@ option{
     font-size: 20px;
 }
 #contactus{
-color: #000;
- text-align: center; 
-background-color: wheat;
-margin-top: 30px;
-height: 100%;
-width: 100%;
-font-weight: bolder;
+    color: #000;
+    text-align: center; 
+    background-color: wheat;
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    font-weight: bolder;
+    padding: 70px;
 }
 #order-form{
     top: 10px;
     
 }
 #order-pizza{
-    background-image: url("../images/pizaa-bg.jpg");
+    /*background-image: url("../images/back1.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
@@ -276,7 +231,7 @@ font-weight: bolder;
     border-radius: 5px;
 }
 #final-option{
-    background-color: blue;
+    background-color: maroon;
     color: #fff;
     text-align: center;
     border-radius: 10px;
@@ -284,20 +239,18 @@ font-weight: bolder;
 
 }
 #Checkout{
-    background-color: blue;
+    background-color: maroon;
     color: #fff;
     text-align: center;
     border-radius: 10px;
     margin-top: 10PX;
-
-
 }
 .hidden{
     display: none;
 } 
 .pizzaTable{
-  color: #fff;
-  border: 1px solid black;
+    color: #fff;
+    border: 1px solid black;
 }
 th, td, th{
     color: #fff;
