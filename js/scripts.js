@@ -183,6 +183,31 @@ $("#checkoutForm").submit(function (event) {
       alert(NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ". Your order will be ready for collection shortly.");
   }
 });
+$("#ordersTaken").append(
+    "<tr>" +
+    '<td scope="orderCalculation">' +
+    newPizza.flavor +
+    " - " +
+    newPizza.flavorPrice () + 
+    "</td>" +
+    "<td>" +
+    newPizza.size +
+    "</td>" +
+    "<td>" +
+    newPizza.crust +
+    " @ " +
+    newPizza.crustPrice() +
+    "</td>" +
+    "<td>" +
+    newPizza.topping +
+    " @ " +
+    newPizza.ToppingPrice()  +
+    "</td>" +
+    "<td>" +
+    newPizza.totalPrice() +
+    "</td>" +
+    "</tr>"
+);
 
 $("#locationForm").submit(function (event) {
   event.preventDefault();
