@@ -163,8 +163,6 @@ $(document).ready(function () {
         "</td>" +
         "</tr>"
     );
-      
-
       $("#ordersTaken").append("");
       if (OrderNew.length > 0) {
           $("#form-heading").empty();
